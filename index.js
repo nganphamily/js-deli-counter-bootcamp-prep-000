@@ -20,6 +20,8 @@ function currentLine(line){
     for (let i =0; i < line.length; i++){
       newLine.push(`${i + 1}. ${line[i]}`);
     }
+    // ["1.Bob", "2.Ana" ].join(" - ")
+    // "1.Bob - 2.Ana"
     return`The line is currently: ${newLine.join(", ")}`;
   }else{
     return "The line is currently empty.";
